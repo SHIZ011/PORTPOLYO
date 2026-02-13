@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by Marianne Louise Medrano">
+    <title>Projects - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode">🌙</button>
+    
+    <!-- Navigation -->
+    <nav>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+          <a href="resume.html">Resume</a>
+            <a href="project.html"Project class="active" aria-current="page">Project</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+    <!-- Projects Header -->
+    <header id="main-content">
+        <h1>My Projects</h1>
+        <p>Check out some of my recent work and accomplishments</p>
+    </header>
+    
+    <!-- Image Slider for Featured Projects -->
+    <section>
+        <h2>Featured Projects</h2>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="resum.png" alt="Portfolio">
+                    <div class="slide-content">
+                        <h3>Personal Portfolio</h3>
+                        <p>Portfolio that i made using a codes</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="canva.png" alt="Canva">
+                    <div class="slide-content">
+                        <h3>Canva</h3>
+                        <p>A Graphic Design For Ads And Commercial</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="proj.png" alt="Resume">
+                    <div class="slide-content">
+                        <h3>Resume</h3>
+                        <p>Resume that i made using a codes</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="TD-GAME.png" alt="GAME">
+                    <div class="slide-content">
+                        <h3>Game</h3>
+                        <p>Game that I made Using a Codes</p>
+                    </div>
+                    </div>
+            </div>
+            
+            <!-- Slider Controls -->
+            <button class="slider-btn prev" onclick="prevSlide()" aria-label="Previous slide">❮</button>
+            <button class="slider-btn next" onclick="nextSlide()" aria-label="Next slide">❯</button>
+            
+            <!-- Slider Dots -->
+            <div class="slider-dots">
+                <span class="dot active" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- All Projects -->
+    <section id="projects">
+        <h2>All Projects</h2>
+        
+        <div class="project">
+            <h3>Project 1: PERSONAL PORTFOLIO</h3>
+            <img src="resum.png" alt="Resume" />
+            <p>A fully responsive personal portfolio website built with HTML, CSS, and JavaScript. Features include dark mode, smooth scrolling, and form validation.</p>
+            <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript, Responsive Design</p>
+             <a href="https://rjonpotpolyo.vercel.app/"><button>VIew Project</button></a>
+        </div>
+        
+        <div class="project">
+            <h3>Project 2: GRAPHIC DESIGNER</h3>
+            <img src="canva.png" alt="Canva" />
+            <p>As a Graphic DEsigner I speacialize In Crafting Visually Compelling Solutions with creativity 
+                and strategy thinking 
+            </p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript, CANVA</p>
+           <a href="https://www.canva.com/design/DAG-XXTFjjU/6IppkrmxVTXHdEjMpJrwsQ/edit?fbclid=IwY2xjawP6Iw9leHRuA2FlbQIxMABicmlkETFoMTRDU0N1dlpYNzA0VjJ2c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHsOx6bZpvdIFL3enZn3PbTLBSW3y9yIkta7uOXC0bj-tA_LolEZG2VWD6JGG_aem_XUwJlqekeH4_TbFbo52uAA"><button>VIew Project</button></a>
+        </div>
+        
+        <div class="project">
+            <h3>Project 3: PERSONAL RESUME</h3>
+            <img src="proj.png" alt="Portfolio" />
+            <p>As a developer, I've built this interactive RESUME from the ground up using HTML, CSS, JavaScript, and frameworks like React. It showcases
+                 my coding projects, from responsive websites to full-stack applications, with clean, efficient code and seamless user experiences. Dive in to 
+                explore my technical skills, problem-solving approach, and passion for turning ideas into functional digital solutions.</p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            <a href="https://rjon-resume.vercel.app/"><button>VIew Project</button></a>
+        </div>
+
+                <div class="project">
+            <h3>Project 4: GAMES</h3>
+            <img src="TD-GAME.png" alt="Portfolio" />
+            <p>As a developer, I've built this game using a HTML</p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            <a href="https://td-games-ni-mob.vercel.app/"><button>VIew Project</button></a>
+        </div>
+    </section>
+    
+    <!-- Technical Skills -->
+    <section id="technical-skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>Responsive Web Design</li>
+            <li>UI/UX Design Principles</li>
+            <li>Git & GitHub</li>
+            <li>Web Accessibility (WCAG)</li>
+            <li>Cross-browser Compatibility</li>
+            <li>Performance Optimization</li>
+        </ul>
+    </section>
+    
+    </main>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
